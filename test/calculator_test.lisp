@@ -1,9 +1,7 @@
 (load (merge-pathnames "fixtures/calculator" *load-truename*))
-(in-package :calculator)
 (use-package :calculator)
 (load (merge-pathnames "../src/lunit" *load-truename*))
 (use-package :lunit)
-(in-package :lunit)
 
 (create-suite "calculator" (lambda (suite)
   (setup suite (lambda ()
